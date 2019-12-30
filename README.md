@@ -22,7 +22,7 @@ Assuming your re-frame registrations use fully qualified keywords (if they don't
   (re-frame/dispatch [::model/foo]))
 ```
 
-If you are editing `app.view` you may be interested in what the `foo` event does. Unfortunately CIDER won't let you `jump-to-var` on a keyword because it's not a var! You have to manually visit the `model` namespace amd search for `foo`, possibly skipping past other references to it until you find the declaration where it gets registered.
+If you are editing `app.view` you may be interested in what the `foo` event does. Unfortunately CIDER won't let you `jump-to-var` on a keyword because it's not a var! You have to manually visit the `model` namespace and search for `foo`, possibly skipping past other references to it until you find the declaration where it gets registered.
 
 This becomes a pain when your code gets bigger.
 
